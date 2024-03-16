@@ -52,6 +52,8 @@ print(response.json())
 
 
 def get_text_message_input(recipient, text):
+    if text == "hello":
+        text = "Hello, tankan"
     return json.dumps(
         {
             "messaging_product": "whatsapp",
